@@ -4,7 +4,9 @@ setup = function() {
 
 mouseClicked = function(){
   answer = round(random(1, 5));
+  text("whatsyourdestiny",random(0,100),random(0,50))
   };
+  
 var answer = 1;
 var y= 100 // speed of fortune
 
@@ -15,14 +17,21 @@ funwithkeys ();
 };
 
 var funwithkeys = function(){
+
+background(100,100,100);
+
+
  if (keyPressed){
- if(key=='M'){background(255,255,255,150);}
+ if(key=='m'){
+ fill(255,255,255)
+ text("Answer",50,10);}
+ 
   }
 
 
 
 
-  background(100,100,100);
+  
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
   fill(60, 0, 255);
